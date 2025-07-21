@@ -172,17 +172,17 @@ div.form-alert.hidden {
 
 input:user-invalid {
   border: 2px solid #b92326;
-  background-color: rgba(185, 35, 38, 0.25);
+  background-color: #F5D2D2;
 }
 
 input:user-valid {
   border: 2px solid #8BC34A;
-  background-color: rgba(139, 195, 74, 0.25);
+  background-color: #E8EBE0;
 }
 
 input:focus {
   outline: none;
-  border: 2px solid #131314;
+  border: 2px solid #402900;
 }
 
 
