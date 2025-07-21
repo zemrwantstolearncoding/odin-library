@@ -195,7 +195,7 @@ div.library {
 
 div.all-books {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   grid-auto-rows: 350px;
   gap: 32px;
 }
