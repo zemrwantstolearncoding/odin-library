@@ -8,6 +8,77 @@
     <title>Odin Library</title>
 </head>
 <body>
-    Odin Library
+    <header>
+        <img src="./book-icon.svg" alt="book icon">
+        <p>Odin Library</p>
+    </header>
+
+    <main>
+        <div class="add-book-form">
+            <p>Add Book:</p>
+            <form class="form-section" action="#">
+                <div class="top-section">
+                    <div class="form-item">
+                        <label class="reqd" for="title">Title:</label>
+                        <input id="title" name="title" type="text" required>
+                    </div>
+                    <div class="form-item">
+                        <label class="reqd" for="author">Author:</label>
+                        <input id="author" name="author" type="text" required>
+                    </div>
+                </div>
+                <div class="bottom-section">
+                    <div class="form-item">
+                        <label class="reqd" for="total-pages">Total pages:</label>
+                        <input id="total-pages" name="total-pages" type="number" required>
+                    </div>
+                    <div class="form-item">
+                        <label class="reqd" for="read-pages">Pages read:</label>
+                        <input id="read-pages" name="read-pages" type="number" required>
+                    </div>
+                    <button class="form-item add-book" type="submit">Add Book</button>
+                </div>
+            </form>
+            <div class="form-alert hidden">
+                <span class="dot red"></span>
+                <p>Pages read must be less that total pages.</p>
+            </div>
+        </div>
+
+        <div class="library">
+            <p>Your Library</p>
+
+            <div class="all-books">
+                <div class="book-card" id="controlbook">
+                    <div class="book-info">
+                        <div class="progress-dot orange">
+                            <span class="dot orange"></span>
+                            <span>In progress</span>
+                        </div>
+                        <p>To Kill a Mockingbird</p>
+                        <p>by Harper Lee</p>
+                        <p>323 pages</p>
+                    </div>
+                    <div class="read-status">
+                        <div class="book-utility">
+                            <button id="controlbook">Delete</button>
+                            <button id="controlbook">Read</button>
+                        </div>
+                        <div class="read-progress">
+                            <p class="progress-status">242 / 323</p>
+                            <div class="progress-inside control-progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>@zemrwantstolearncoding</p>
+        <a href="https://github.com/zemrwantstolearncoding" target="_blank">
+            <img src="./github-logo.svg" alt="github logo">
+        </a>
+    </footer>
 </body>
 </html>
