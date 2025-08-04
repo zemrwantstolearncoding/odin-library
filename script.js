@@ -1,22 +1,24 @@
 let myLibrary = [];
 
-function Book(title, author, totalPages, readPages) {
-    this.id = crypto.randomUUID();
-    this.title = title;
-    this.author = author;
-    this.totalPages = totalPages;
-    this.readPages = readPages;
+class Book {
+    constructor(title, author, totalPages, readPages) {
+        this.id = crypto.randomUUID();
+        this.title = title;
+        this.author = author;
+        this.totalPages = totalPages;
+        this.readPages = readPages;
 
-    if (this.totalPages - this.readPages) {
-        this.read = false;
-    } else {
-        this.read = true;
+        if (this.totalPages - this.readPages) {
+            this.read = false;
+        } else {
+            this.read = true;
+        }
+    }
+    toggleRead() {
+        this.read = !this.read;
     }
 }
 
-Book.prototype.toggleRead = function() {
-    this.read = !this.read;
-}
 
 function addBookToLibrary(title, author, totalPages, readPages) {
     const newBook = new Book(title, author, totalPages, readPages);
