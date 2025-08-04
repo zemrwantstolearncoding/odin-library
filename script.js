@@ -171,8 +171,8 @@ function addUserBook(event) {
     formData = new FormData(addBookForm);
     const title = formData.get("title");
     const author = formData.get("author");
-    const totalPages = formData.get("total-pages");
-    const readPages = formData.get("read-pages");
+    const totalPages = parseInt(formData.get("total-pages"));
+    const readPages = parseInt(formData.get("read-pages"));
 
     if (readPages > totalPages) {
         formAlert.classList.remove("hidden");
